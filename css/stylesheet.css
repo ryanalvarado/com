@@ -1,0 +1,277 @@
+* {
+	box-sizing: border-box;  /* this model does not add the padding measurements to the total size of your box*/
+	transition: all ease-in-out 250ms;
+} 
+
+body {
+	margin: 0;
+	color: white;
+	font-family: 'Avenir', sans-serif;
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container{
+	width: 95%;
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after{
+	content:'';
+	display: block;
+	clear: both;
+	
+}
+
+
+/* Typography  
+rem is calculated based on the default h1 value 16px 
+for example a media query trigered at 60rem responds to viewports wider than 960px
+16*60= 960
+------------------------*/
+h1{
+	font-weight: 300;
+	font-size: 1.8rem;  
+	margin-top: 0;
+}
+
+p{
+ 	margin-top:0;
+	line-height: 1.4;
+}
+
+p:last-of-type{
+	margin-bottom: 0;
+}
+
+@media (min-width:60rem){
+	
+	p{
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+}
+
+.title{
+	font-size: 2.5em;
+	margin-botom: 1.5em;
+	font-weight: 900;
+	margin-top: 1em;
+}
+.title span {
+	font-weight: 300;
+	display: block;
+	font-size: .9em;
+}
+
+.title-cta{
+	margin: 0 0 .5em;
+}
+.unstyled-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+@media (min-width:60rem) {
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	.title {
+		font-size: 3.7rem;
+	}
+}
+
+
+		/*==Buttons==*/
+
+.button{
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	padding: .5em 1.75em;
+}
+
+@media(min-width: 60rem){
+	
+	.button{
+		font-size: 1.5em;
+	}
+}
+
+.button-small{
+	font-size: .7rem;
+	font-weight: 700;
+}
+
+.button-accent{
+	color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+.button-accent:hover, 
+.button-accent:focus {
+	background: #00ff6c;
+	color: #232323;
+}
+
+.button-dark{
+	color: #232323;
+	border-color: #232323;
+}
+
+.button-dark:hover, 
+.button-dark:focus {
+	background: #232323;
+	color: #00ff6c;
+}
+
+
+/* HEADER
+------------------------*/
+
+header {
+position:center; 
+	left: 0;
+	right: 0;
+	margin: 1em;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin: 1em;
+	
+}
+
+nav a {
+	
+	font-weight: 900;
+	text-decoration: none;
+	padding: .5em;
+	text-transform: uppercase;
+	color: white;
+	font-size: .8rem;
+	
+}
+
+nav a:hover ,
+nav a:focus {
+	color: #ddd;
+}
+	
+
+	@media (min-width: 60rem) {
+	
+	.logo{
+		float: left;
+	}
+	
+	nav{
+		float: right;
+	}
+}
+
+
+
+
+
+@media(min-width: 60rem){
+	
+	h1{
+		font-size: 2.5rem;
+		}
+	
+	.home-about{
+	background-repeat: no-repeat;
+	padding-bottom: 10em;
+		
+	}
+	
+
+
+
+/* Portfolio items
+------------------------*/
+.portfolio {
+	margin: 3em 0 0;
+}
+
+
+.port-item{
+	margin: 0;
+	position: relative;
+	padding: 150px;
+}
+
+.port-item img{
+	display:block;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+
+.port-description {
+	position: absolute;
+	z-index: 100;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	color: white;
+	background: rgba(0,0,0,.6);
+	padding-bottom: 2em;
+		
+}
+
+.port-description p {
+	margin: 1em;
+}
+
+
+
+
+
+
+/*  Footer
+------------------------*/
+footer {
+	background: #232323;
+	color: #fff;
+	text-align: left;
+	padding: 5em 0;
+}
+
+
+
+
+
+
+
+

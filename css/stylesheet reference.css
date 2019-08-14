@@ -1,16 +1,5 @@
-/*  Coded by Chris Cline,  following this tutorial: " https://youtu.be/1ZyDCt8QLxE " 
-How to Create a Responsive Website from Scratch BY: Kevin Powell
-
-ENJOY :)
-*/
-
-
-
-
-/*   Site Global
-==============================================*/
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+/* not going to use google fonts API */
+/*  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900'); */
 
 * {
 	box-sizing: border-box;  /* this model does not add the padding measurements to the total size of your box*/
