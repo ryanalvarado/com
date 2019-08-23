@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	color: white;
-	font-family: 'Avenir', sans-serif;
+	font-family: 'Georgia', sans-serif;
 	text-align: center;
 }
 
@@ -40,6 +40,18 @@ h1{
 	font-weight: 300;
 	font-size: 1.8rem;  
 	margin-top: 0;
+	font-family: 'Times'
+	font-stretch: expanded;
+	text-transform: uppercase;
+}
+
+h2{
+	font-weight: 300;
+	font-size: 1.8rem;  
+	margin-top: 0;
+	font-family: 'Times'
+	font-stretch: ultra-condensed;
+	text-transform: uppercase;
 }
 
 p{
@@ -153,7 +165,7 @@ position:center;
 }
 
 nav ul {
-	margin: 0;
+	margin: 10;
 	padding: 0;
 	list-style: none;
 }
@@ -189,6 +201,7 @@ nav a:focus {
 	
 	nav{
 		float: right;
+		padding-left: 250px
 	}
 }
 
@@ -221,7 +234,7 @@ nav a:focus {
 .port-item{
 	margin: 0;
 	position: relative;
-	padding: 150px;
+	padding: 200px;
 }
 
 .port-item img{
@@ -241,7 +254,7 @@ nav a:focus {
 .port-description {
 	position: absolute;
 	z-index: 100;
-	bottom: 0em;
+	bottom: 10em;
 	left: 0em;
 	right: 0em;
 	color: white;
